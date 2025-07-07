@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'p.urls'
+ROOT_URLCONF = 'p.p.urls'
 
 TEMPLATES = [
     {
@@ -119,9 +119,7 @@ USE_TZ = True
 import os
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "mvulane/static"),
-]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Default primary key field type
