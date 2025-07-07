@@ -1,0 +1,263 @@
+{% include "mvulane/header.html" %}
+requirements
+<style>
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+</style>
+
+<body>
+<section style="background: #edecec">
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Mvulane Tech</h1>
+      <h3 class="fw-normal text-muted mb-3">Transforming Ideas Into Digital Reality</h3>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+</section>
+
+<section style=" display: flex; align-items: center; justify-content: center; height: 100vh;">
+  <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden" style="background: white; position: relative;">
+    <div class="my-3 py-3">
+
+
+      <!-- Image with the card on top -->
+      <div style="position: relative; display: inline-block; ">
+        <!-- Image -->
+        <img
+          src="https://cdn.stocksnap.io/img-thumbs/960w/black-background_LERISDMBLY.jpg"
+          class="rounded shadow-sm"
+          style="border-radius: 15px; width: 1100px; height: 390px;">
+
+        <!-- Card positioned over the image -->
+        <div class="card shadow" style="width: 33rem; height: 22rem; position: absolute; top: 20%; left: 50%; transform: translate(-93%, 1%);">
+          <div class="card-body">
+            <h2 class="card-title">About Us </h2>
+            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <hr>
+            <p class="card-text">Welcome to Mvulane Tech, where we turn innovative ideas into practical, digital solutions tailored for modern business needs. Specializing in web services and software development, we empower companies with tools designed to streamline payroll processes and workforce management. Our goal is to simplify complex operations, allowing businesses to focus on growth and efficiency without getting bogged down by administrative burdens</p>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+      <div></div>
+
+
+  </div>
+</section>
+
+<section>
+  <div style="position: relative;" >
+    <img
+          src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4Njc1MzQwLWltYWdlLWt3dnhocW43LmpwZw.jpg"
+          class=""
+          style=" width: 100%; height: 450px">
+    <div class="card shadow" style="width: 33rem; height: 22rem; position: absolute; top: 20%; left: 90%; transform: translate(-93%, 1%); background: transparent">
+          <div class="card-body">
+            <h2 class="card-title">We Build</h2>
+            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <hr>
+            <p class="card-text">Welcome to Mvulane Tech, where we turn innovative ideas into practical, digital solutions tailored for modern business needs. Specializing in web services and software development, we empower companies with tools designed to streamline payroll processes and workforce management. Our goal is to simplify complex operations, allowing businesses to focus on growth and efficiency without getting bogged down by administrative burdens</p>
+
+          </div>
+    </div>
+
+</section>
+
+
+<section>
+  <h2 class="display-3 text-center">Services</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
+    <div class="col">
+      <div class="card no-boarder" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Clock_12-00.svg" width="100%" height="225">
+        <div class="card-body">
+          <h4>Espanini.com</h4>
+          <p class="card-text">Our flagship time and attendance solution, Espanini.com, leverages advanced facial recognition technology to streamline attendance tracking and data processing.
+            Espanini.com empowers managers with tools to review, sign off on timesheets, and generate payroll reports, simplifying HR tasks and improving payroll accuracy.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWic1dM8U004h-BdBD1lpYdZp45iR2x1_RNw&s" width="100%" height="225">
+        <div class="card-body">
+          <h4>Payroll Management</h4>
+          <p class="card-text">Mvulane Tech provides comprehensive payroll data management services designed to reduce human error and improve compliance with local and global labor laws. Our systems automate the flow of attendance data into payroll, making it easy for companies to monitor working hours, calculate wages, and generate reports. We offer customizable solutions that can be tailored to meet the specific payroll needs of each client, providing businesses with peace of mind and reliable, consistent payroll outputs</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KTpiXsWx65wFwsfQQS3kZ5jAIDybOkINFw&s" width="100%" height="225">
+        <div class="card-body">
+          <h4>Custom Web Services and Integrations</h4>
+          <p class="card-text">For companies with unique requirements, we offer custom web services and integrations to enhance or expand existing systems. From database solutions to API integrations, our team works closely with clients to develop systems that fit seamlessly into their existing workflow. Whether you need a standalone app or an enhancement to your current infrastructure, Mvulane Tech’s custom solutions bring flexibility, scalability, and performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: #edecec">
+   <h2 class="display-3 text-center">Contact</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <form action="" method='POST'>
+                {% csrf_token %}
+                {{ form }}
+
+                <button type="submit" class="btn btn-secondary btn-sm" value=""> Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+</body>
+{% include "mvulane/footer.html" %}
+
+<script>
+  document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (scrollPosition > sectionTop + 100) { // Adjust 100 for earlier triggering
+      section.classList.add("visible");
+    } else {
+      section.classList.remove("visible");
+    }
+  });
+});
+
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+  section {
+  perspective: 1000px;
+  box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
+
+  height: 100vh;
+  align-items: center;
+  scroll-snap-align: start;
+  justify-content: center;
+
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+
+  .margin {
+  margin: 75% 0;
+  }
+
+  .parallax {
+  background: url("https://cdn.stocksnap.io/img-thumbs/960w/black-background_LERISDMBLY.jpg")
+   fixed 100%;
+  }
+
+  .parallax-inner {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  }
+
+
+
+
+
+  .two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .three {
+    background: #f0f0f0;
+  }
+
+  .four {
+    background: #ffffff;
+  }
+
+  .five {
+    background: #edecec;
+  }
+
+  section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+</style>
+
+<body>
+<div class="margin"></div>
+  <section class="parallax">
+    <div class="parallax-inner">
+    <h1 class="display-3 fw-bold" style="color: white; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);"> Mvulane Tech</h1>
+    <br>
+      </div>
+
+
+  </section>
+<div class="margin"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
