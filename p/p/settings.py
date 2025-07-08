@@ -121,8 +121,10 @@ import os
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR.parent / 'static',  # go up one level to find the static folder
 ]
+
+
 
 
 # Default primary key field type
