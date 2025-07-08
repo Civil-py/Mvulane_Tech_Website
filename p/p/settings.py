@@ -124,6 +124,9 @@ STATICFILES_DIRS = [
     BASE_DIR.parent / 'static',  # go up one level to find the static folder
 ]
 
+print("BASE_DIR is:", BASE_DIR)
+
+
 
 
 
